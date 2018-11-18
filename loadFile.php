@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-$result = array();
+$response = array();
 
-$result['user'] = $_SESSION['user'];
-$result['fileName'] = "textFile.txt";
-$result['fileContent'] = file_get_contents($result['fileName']);
+$response['user'] = $_SESSION['user'];
+$response['fileName'] = "textFile.txt";
+$response['fileContent'] = file_get_contents($response['fileName']);
 
-echo( json_encode($result));
+echo( json_encode($response));
 
