@@ -1,0 +1,87 @@
+h1,
+h2,
+h3,
+p,
+input,
+option,
+label,
+legend,
+textarea {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    margin: 100px auto;
+}
+
+form fieldset {
+    margin: 15px 10px;
+    border: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input {
+    padding: 5px;
+}
+
+.border-green {
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.bg-green {
+    background-color: green;
+    color: white;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+form legend {    
+    width: 100px;
+    margin: -15px 0 0 10px;
+    text-align: center;
+}
+
+#login-form label {
+    width: 25%;
+}
+
+#login-form select {
+    width:75%;
+}
+
+#login-form button {
+    float:right;
+    margin-top: 20px;
+}
+#login-form button:hover {
+    color:green;
+    background-color: white;
+}
+
+#login-form {
+    max-width: 300px;
+}
+
+#edit-form {
+    max-width: 500px;
+}
+
+#edit-form label {
+    display:block;
+    margin:10px 0 5px 0;
+}
+
+#edit-form textarea,
+#edit-form input {
+    width:100%;
+}

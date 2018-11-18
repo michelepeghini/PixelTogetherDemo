@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <form action="login.php" id="login-form" class="border-green">
+        <legend class="border-green bg-green padding-5">Log in</legend>
+        <fieldset>
+            <label for="user">User:</label>
+            <select name="user" id="user" class="border-green padding-5">
+                <option value="user1">User 1</option>
+                <option value="user2">User 2</option>
+            </select>
+            <button id="login-btn" class="border-green bg-green padding-5">Log In</button>
+        </fieldset>
+    </form>
+</body>
+<script>
+    function login() {
+        $.get("login.php", {user: $("#user").value})
+            .done(function(){ 
+                alert("Success");
+            })
+            .fail(function(){
+                alert("Fail");
+            });
+    }
+
+    $(document).ready(function(){
+        $("#login-btn").click(login);
+    })
+</script>
+</html>
