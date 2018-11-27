@@ -1,15 +1,13 @@
-// Variables
-let model, //data model: user, fileName, fileContent
-    changed = false, //file has been changed
-    conn = new WebSocket('ws://localhost:8080');
-    fileName = $('#file-name'),
-    fileContent = $('#file-content'),
-    pingButton = $('#ping'),
-    user = $('#user'),
-
-
-
 $(document).ready(function(){    
+    // Variables
+    let model, //data model: user, fileName, fileContent
+        changed = false, //file has been changed
+        conn = new WebSocket('ws://localhost:8080');
+        fileName = $('#file-name'),
+        fileContent = $('#file-content'),
+        pingButton = $('#ping'),
+        user = $('#user');
+
 
     // load file from server and refresh form content
     function loadFile() {
