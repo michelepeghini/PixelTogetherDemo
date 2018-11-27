@@ -63,11 +63,11 @@ form legend {
     width:75%;
 }
 
-#login-form button {
+button {
     float:right;
     margin-top: 20px;
 }
-#login-form button:hover {
+button:hover {
     color:green;
     background-color: white;
 }

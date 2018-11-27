@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+require __DIR__ . '/vendor/autoload.php';
+
 $response = array();
 
 $response['user'] = $_SESSION['user'];
